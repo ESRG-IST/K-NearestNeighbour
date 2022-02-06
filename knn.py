@@ -2,12 +2,11 @@
 """
 Created on Wed Feb  2 17:21:08 2022
 
-@author: Basheer
+@author: Azeem
 """
 
 "K-Nearest Neighbour"
 
-import numpy as np
 import pandas as pd
 from statistics import mode
 
@@ -36,7 +35,7 @@ for j in range(len(xtest)):
     print('Atom: ',test.iloc[j,2],'Classified as: ',npc)
     print('The original classification is: ',test.iloc[j,3])
     if (npc==test.iloc[j,3]):
-        print('Succesdfull Prediction')
+        print('Successfull Prediction')
         success=success+1
     else:
         print('Failed Prediction')
